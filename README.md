@@ -1,6 +1,6 @@
 2 folders in this project:
-- client - React app (creating React app using Vite)
-- server - Node.js application
+- client - React app (React application using Vite)
+- server - Node.js application (with Express)
 
 client installation:
 - Make sure using node version 18.13.0^
