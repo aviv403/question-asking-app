@@ -13,7 +13,8 @@ server installation:
 - Make sure using node version 18.13.0^
 - go to server directory (cd server)
 - install dependencies (npm i)
-- open .env file and adjustify the database connection environement variables
+- open .env file and adjustify the database connection environement variables if needed
+- open new Schema in Mysql call it "question-asking" and import files from server/Dump20240115/ path directory (for populate db)
 - run apllication on port 5000 (npm run dev)
 
 
