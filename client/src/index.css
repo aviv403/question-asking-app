@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --primary: #e07458;
+  --secondary: #4e5e94;
+}
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Poppins";
+  background: var(--secondary);
+}
+* {
+  color: #fff;
+  margin: 0;
+}
+p {
+  margin: 20px 0;
+}
+button {
+  border: 0;
+  /* padding: 9px; */
+  height: 2rem;
+  border-radius: 4px;
+  color: white;
+  margin: 10px;
+  background: var(--primary);
+  cursor: pointer;
+}
+
+header {
+  /* border: 1px solid red; */
+}
+
+/* navbar */
+header nav {
+  display: flex;
+  gap: 16px;
+  justify-content: end;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header nav h1 {
+  margin-right: auto;
+  border-bottom: 3px solid var(--primary);
+}
+header nav a {
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+}
+header nav a.active {
+  background: var(--primary);
+}
+
+/* page content */
+main {
+  max-width: 1200px;
+  min-height: 70vh;
+  margin: 40px auto;
+  /* border: 1px solid red; */
+}
+
+footer {
+  text-align: center;
+  /* width: 100%; */
+  color: #fff;
+}
+
+input {
+  border-radius: .1rem;
+  padding: 1px 4px;
+  border: none;
+  margin-left: 10px;
+  color: black;
+  height: 30px;
+  max-width: 400px;
+  font-size: 1rem
+}
+
+input:focus{
+  outline: none;
+}
+
+.answers {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.root-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.vote{
+  width: 80vw;
+}
+
+.home {
+  width: 80vw;
+}
+
+.create-question {
+  width: 80vw;
+}
+
+.create-question > h2 {
+  margin-bottom: 1.3rem;
+}
+
+
+
+// LOADER //
+.loader {
+  border: 7px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 7px solid #2d2149;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
